@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP1 de Interface</title>
+    <style >
+        * { margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; }
+        
+        body {font-size: 100%; background-color:#0E0504}
+    
+        .cabecalho {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px;
+            }
+
+        .cabecalho-imagem {
+            padding-left: 24px;
+            width: 120px;
+        height: 100%;
+        }
+
+        .cabecalho-menu {
+        display: flex;
+        gap: 24px;
+        justify-content: flex-end;
+        padding-right: 24px;
+        }
+
+        .cabecalho-menu-item {
+        font-family: 'Sarala', sans-serif;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 18px
+        }
+        
+        main{ margin-bottom: 48px; border-top: 4px solid #4b1f0e;}
+        section{
+            display: flex; flex-direction: row; 
+            justify-content: space-around; gap: 32px;
+        }
+        
+        .conteudo-principal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            }
+        .conteudo-principal-titulo {
+        font-family: 'Righteous', cursive;
+        font-weight: 400;
+        font-size: 64px;
+        color: #ffffff;
+        padding: 16px;
+        }
+        .conteudo-principal-imagem{
+        width: 100%;
+        height: 275px; 
+        }
+        
+        .conteudo-secundario{
+            display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 16px;
+        margin-top: 24px;
+        padding-left: 16px;
+        } 
+
+        .conteudo-secundariop {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 16px;
+        margin-top: 16px;
+        }
+
+        .conteudo-secundariop-titulo { 
+        padding-top: 16px;
+        font-family: 'Righteous', cursive;
+        font-weight: 400;
+        font-size: 24px;
+        color: #ffffff;
+        margin-bottom: 16px;
+        }
+
+        .conteudo-secundariop-paragrafo {
+        font-family: 'Sarala', sans-serif;
+        font-weight: 300;
+        font-size: 18px;       
+        color: #ffffff;
+        }
+        .conteudo-secundarios {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 8px;
+        margin-top: 24px;
+        }
+
+        .conteudo-secundarios-titulo { 
+            border-top: 4px solid #87572f;
+        padding-top: 32px;
+        font-family: 'Righteous', cursive;
+        font-weight: 400;
+        font-size: 24px;
+        color: #ffffff;
+        margin-bottom: 16px;
+        }
+
+        .conteudo-secundarios-paragrafo {
+        font-family: 'Sarala', sans-serif;
+        font-weight: 300;
+        font-size: 18px;       
+        color: #ffffff;
+        }
+            
+        .rodape {padding: 32px; border-top: 2px solid #87572f; color: #ffffff;}
+    </style>
+</head>
+<body >  
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="logo_kombi_coffee.png" alt="Logo do Kombi Café">
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item">HOME</a>
+            <a class="cabecalho-menu-item">LOCAL</a>
+            <a class="cabecalho-menu-item">CARDÁPIO</a>
+            <a class="cabecalho-menu-item">EVENTOS</a>
+            <a class="cabecalho-menu-item">CONTATO</a>
+        </nav>
+    </header>
+    <main class="conteudo">
+        <section class="conteudo-principal">
+            <div class="conteudo-principal">
+                <h1 class="conteudo-principal-titulo">O café que chega até você</h1>
+                <img class="conteudo-principal-imagem" src="banner.jpg" alt="Imagem de uma xícara">
+            </div>  
+        </section>
+    
+        <section class="conteudo-secundario">        
+            <div class="conteudo-secundariop">
+                <h2 class="conteudo-secundariop-titulo">Escolha o seu café</h2>
+                <p class="conteudo-secundariop-paragrafo">Hoje em dia, café com não é só aquele feito no coador de pano que nossas avós faziam, um nove mundo se abre para nós em matéria de tipos de grãos, procedência, tipos de torras e jeitos de preparar a bebida, que é tão popular na mesa dos brasileiros.</p>
+            </div>
+            <div class="conteudo-secundarios">
+                <h3 class="conteudo-secundarios-titulo">Onde encontrar a loja</h3>
+                <p class="conteudo-secundarios-paragrafo">O Kombi Coffee é móvel.<a href="https://goo.gl/maps/yh2uZEdHkcfa7FPT7"><strong>VEJA ONDE</strong></a>  você pode encontrar a loja.</p>
+            </div>  
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <h4>Copyright</h4> 
+    </footer>
+    
+</body>
+</html>
